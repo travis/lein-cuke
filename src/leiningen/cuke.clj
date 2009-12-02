@@ -1,4 +1,5 @@
-(ns leiningen.cuke)
+(ns leiningen.cuke
+  (:use  [clojure.contrib.str-utils2 :only (join)]))
 
 (defn jruby
   [options]
@@ -13,6 +14,6 @@
 
 (defn cuke
   "Run cucumber features"
-  [project]
-  (jruby "lib/gems/bin/cucumber")
+  [project & args]
+  (jruby (join " " (cons "lib/gems/bin/cucumber" args)))
   )

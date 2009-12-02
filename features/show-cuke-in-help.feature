@@ -7,5 +7,3 @@ Feature: Show cuke in help
     Given I have installed lein-cuke
     When I run "lein help"
     Then I should see "cuke" in the output
-
-
