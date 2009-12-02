@@ -1,1 +1,5 @@
+Manifest.txt
 lib
+classes
+lein-cuke.jar
+pom.xml
