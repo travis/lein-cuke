@@ -1,14 +1,19 @@
 # lein-cuke
 
 lein-cuke is a [Leiningen](http://github.com/technomancy/leiningen) plugin that provides
-[Cucumber](http://cukes.info) via [cuke4duke](http://github.com/aslakhellesoy/cuke4duke)
+[Cucumber](http://cukes.info) support via [cuke4duke](http://github.com/aslakhellesoy/cuke4duke)
 
-# Running
+## Installation
 
-After the standard "lein deps", run
+   Add something like `[lein-cuke "0.0.1-SNAPSHOT"]` to your project.clj.
 
-   $ lein cuke-gems
+   Look [here](http://clojars.org/lein-cuke) for the latest.
 
-to pull down needed gems. You can then run cucumber with
+## Usage
 
-   $ lein cuke
+Do this:
+
+    $ lein deps # install dependencies in lib/
+    $ lein cuke-gems # install needed gems
+    $ # create cucumber hierarchy - todo: add a target for this
+    $ lein cuke # start red-green-refactoring!
