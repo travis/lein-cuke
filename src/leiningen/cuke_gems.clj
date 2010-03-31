@@ -4,5 +4,4 @@
 (defn cuke-gems
   "Run cucumber features"
   [project]
-  (jruby "-S gem install -i lib/gems --no-rdoc --no-ri cucumber")
-  )
+  (jruby "-S gem install -i lib/gems --no-rdoc --no-ri cucumber"))
